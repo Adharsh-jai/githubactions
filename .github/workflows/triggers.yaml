@@ -1,0 +1,11 @@
+name: Triggers
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: message
+        run: echo "This workflow is triggered by a pull request to the main branch."
